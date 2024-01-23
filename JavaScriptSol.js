@@ -71,10 +71,23 @@
     0 <= prices[i] <= 10^4
 */
 
+/* IDEA
+    Loop through the array once. Store first value in a variable to represent buy price. Then next iteration, compare if there is profit. If no profit, update buy variable and iterate
+*/
+
 /**
  * @param {number[]} prices
  * @return {number}
  */
 var maxProfit = function(prices) {
-    
+    let profit = 0;
+    let buyPrice = prices[0];
+    for (let i = 0; i < prices.length; i++) {
+        if (prices[i] < buyPrice) {
+            buyPrice = prices[i]
+        } else if (prices[i] - buyPrice > profit) {
+            profit = prices[i] - buyPrice;
+        }
+    }
+    return profit;
 };
