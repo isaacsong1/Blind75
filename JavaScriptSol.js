@@ -109,6 +109,8 @@ var maxProfit = function(prices) {
     // return max_profit
     // -----
     // My final solution
+    // Time: O(N)
+    // Space: O(1)
     let profit = 0;
     let buyPrice = prices[0];
     for (let i = 0; i < prices.length; i++) {
