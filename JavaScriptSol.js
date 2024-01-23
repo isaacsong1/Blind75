@@ -1,4 +1,4 @@
-//? Two Sum (https://leetcode.com/problems/two-sum/)
+//? 1. Two Sum (https://leetcode.com/problems/two-sum/)
 //! Completed during Software Engineering Bootcamp
 /**
  * @param {number[]} nums
@@ -39,7 +39,7 @@
 
 /*---------------------------------------------------------------------------------------------------*/
 
-//? Best Time to Buy and Sell Stock (https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+//? 121. Best Time to Buy and Sell Stock (https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 //! Practice Whiteboard Coding
 // R - Repeat the problem
 // E - Write out examples
@@ -122,3 +122,25 @@ var maxProfit = function(prices) {
     }
     return profit;
 };
+
+/*---------------------------------------------------------------------------------------------------*/
+
+//? 217. Contains Duplicate (https://leetcode.com/problems/contains-duplicate/description/)
+/* DIRECTIONS
+
+*/  
+
+/* EXAMPLES
+1:  
+
+2:
+
+*/
+
+/* CONSTRAINTS
+
+*/
+
+/* IDEA
+
+*/
