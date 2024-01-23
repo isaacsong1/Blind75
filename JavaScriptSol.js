@@ -44,7 +44,7 @@
 // R - Repeat the problem
 // E - Write out examples
 // A - Describe your approaches
-// C 
+// C - Write your code
 // T 
 // O
 /**
