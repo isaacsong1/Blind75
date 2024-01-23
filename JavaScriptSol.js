@@ -60,7 +60,10 @@
     Output: 5
     Explanation: Day 2 (price = 1) and sell day 5 (prices = 6)
 
-
+2:
+    Input: prices = [7, 6, 4, 3, 1]
+    Output: 0
+    Explanation: No profits
 */
 
 /**
