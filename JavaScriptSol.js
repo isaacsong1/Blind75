@@ -156,5 +156,6 @@ var maxProfit = function(prices) {
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    
+    const numsSet = newSet(nums);
+    return numsSet.size !== nums.length;
 };
