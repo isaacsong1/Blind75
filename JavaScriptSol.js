@@ -46,7 +46,7 @@
 // A - Describe your approaches
 // C - Write your code
 // T - Test
-// O
+// O - Optimization
 /**
  * @param {number[]} prices
  * @return {number}
