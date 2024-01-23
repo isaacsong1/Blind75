@@ -82,14 +82,29 @@
 var maxProfit = function(prices) {
     // Time: O(n)
     // Space: O(1)
-    let profit = 0;
-    let buyPrice = prices[0];
-    for (let i = 0; i < prices.length; i++) {
-        if (prices[i] < buyPrice) {
-            buyPrice = prices[i]
-        } else if (prices[i] - buyPrice > profit) {
-            profit = prices[i] - buyPrice;
-        }
-    }
-    return profit;
+    // let profit = 0;
+    // let buyPrice = prices[0];
+    // for (let i = 0; i < prices.length; i++) {
+    //     if (prices[i] < buyPrice) {
+    //         buyPrice = prices[i]
+    //     } else if (prices[i] - buyPrice > profit) {
+    //         profit = prices[i] - buyPrice;
+    //     }
+    // }
+    // return profit;
+    // -----
+    // Similar but alternate solution 
+    // let left = 0;// buy
+    // let right = 0; // sell
+    // let max_profit = 0;
+    // while (right < prices.length) {
+    //     if (prices[left] < prices[right]) {
+    //         let profit = prices[right] - prices[left]; // current profit
+    //         max_profit = Math.max(max_profit, profit);
+    //     } else {
+    //         left = right;
+    //     }
+    //     right ++;
+    // }
+    // return max_profit
 };
