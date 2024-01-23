@@ -43,7 +43,7 @@
 //! Practice Whiteboard Coding
 // R - Repeat the problem
 // E - Write out examples
-// A 
+// A - Describe your approaches
 // C 
 // T 
 // O
