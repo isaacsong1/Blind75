@@ -66,6 +66,11 @@
     Explanation: No profits
 */
 
+/* CONSTRAINTS
+    1 <= prices.length <= 10^5
+    0 <= prices[i] <= 10^4
+*/
+
 /**
  * @param {number[]} prices
  * @return {number}
