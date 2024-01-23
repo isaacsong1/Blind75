@@ -47,6 +47,12 @@
 // C - Write your code
 // T - Test
 // O - Optimization
+
+/*
+    You are given an array (prices) where prices[i] is the price of the given stock on the ith day. You want to maximize your profit by choosing ONE day to buy one stock and 
+    choosing a DIFFERENT day to sell it. 
+    RETURN: The maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+*/  
 /**
  * @param {number[]} prices
  * @return {number}
