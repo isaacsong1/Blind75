@@ -45,7 +45,7 @@
 // E - Write out examples
 // A - Describe your approaches
 // C - Write your code
-// T 
+// T - Test
 // O
 /**
  * @param {number[]} prices
