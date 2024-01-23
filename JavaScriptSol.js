@@ -41,7 +41,12 @@
 
 //? Best Time to Buy and Sell Stock (https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 //! Practice Whiteboard Coding
-
+// R 
+// E 
+// A 
+// C 
+// T 
+// O
 /**
  * @param {number[]} prices
  * @return {number}
