@@ -240,5 +240,6 @@ var productExceptSelf = function(nums) {
     */
 
     //! To reduce space complexity to O(1) (excluding the result array), we can eliminate the prefix and suffix array and update the result array twice.
-    
+    // Initialize result array
+    const result = [];
 };
