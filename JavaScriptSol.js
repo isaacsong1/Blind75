@@ -197,6 +197,8 @@ var containsDuplicate = function(nums) {
  * @return {number[]}
 */
 var productExceptSelf = function(nums) {
+    // Time: O(n)
+    // Space: O(n) (excluding the array)
     // Initialize prefix array to keep track of multiples on the left
     const prefix = [];
 
