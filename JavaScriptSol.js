@@ -161,3 +161,28 @@ var containsDuplicate = function(nums) {
     const numsSet = newSet(nums);
     return numsSet.size !== nums.length;
 };
+
+/*---------------------------------------------------------------------------------------------------*/
+
+//? 238. Product of Array Except Self (https://leetcode.com/problems/product-of-array-except-self/description/)
+/* DIRECTIONS
+    
+*/  
+
+/* EXAMPLES
+1: 
+    Input: nums = [1, 2, 3, 1]
+    Output: true
+2:
+    Input: nums = [1, 2, 3, 4]
+    Output: false
+*/
+
+/* CONSTRAINTS
+    1 <= nums.length <= 10^5
+    -10^9 <= nums[i] <= 10^9
+*/
+
+/* IDEA
+
+*/
