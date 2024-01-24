@@ -188,6 +188,14 @@ var containsDuplicate = function(nums) {
 */
 
 /* IDEA
-    Initialize a pointer variable pointing to 0 initially and an empty array. Set up a while loop and initialize a total to 1. While the pointer is not the length, multiply all values 
-    where the index of the loop of not equal to the current index and append to array.
+    The idea of this problem is that for each index, we are multiplying everything on the LEFT (prefix) times everything on the RIGHT (suffix). For the prefix multiples, we can skip the first index since
+    there is nothing to the left. Same for the suffix multiples. After, the result array will be the prefix times the suffix.
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+*/
+var productExceptSelf = function(nums) {
+
+};
