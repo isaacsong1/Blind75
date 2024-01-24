@@ -166,23 +166,27 @@ var containsDuplicate = function(nums) {
 
 //? 238. Product of Array Except Self (https://leetcode.com/problems/product-of-array-except-self/description/)
 /* DIRECTIONS
-    
+    Given an integer array (nums), return AN ARRAY (answer) such that answer [i] is equal to the product of all the elements of nums EXCEPT nums[i].
+
+    The product of any prefix or suffic of nums is guaranteed to fit in a 32-bit integer.
+
+    You must write an algoithm that runs in O(n) time and without using the division operation.
 */  
 
 /* EXAMPLES
 1: 
-    Input: nums = [1, 2, 3, 1]
-    Output: true
-2:
     Input: nums = [1, 2, 3, 4]
-    Output: false
+    Output: [24, 12, 8, 6]
+2:
+    Input: nums = [-1, 1, 0, -3, 3]
+    Output: [0, 0, 9, 0, 0]
 */
 
 /* CONSTRAINTS
-    1 <= nums.length <= 10^5
-    -10^9 <= nums[i] <= 10^9
+    2 <= nums.length <= 10^5
+    -30 <= nums[i] <= 30
 */
 
 /* IDEA
-
+    
 */
