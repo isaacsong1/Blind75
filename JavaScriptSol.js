@@ -158,7 +158,9 @@ var maxProfit = function(prices) {
 var containsDuplicate = function(nums) {
     // Time: O(1)
     // Space: O(n)
+    // Initialize a set of nums which creates a tuple of unique values
     const numsSet = newSet(nums);
+    // Return boolean if nums array is unique or not
     return numsSet.size !== nums.length;
 };
 
