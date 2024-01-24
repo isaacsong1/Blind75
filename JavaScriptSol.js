@@ -242,4 +242,24 @@ var productExceptSelf = function(nums) {
     //! To reduce space complexity to O(1) (excluding the result array), we can eliminate the prefix and suffix array and update the result array twice.
     // Initialize result array
     const result = [];
+
+    // Initialize a prefix variable to 1
+    let prefix = 1;
+
+    // Iterate over the indeces of the nums array and set the result at each index to the prefix multiples and update the prefix variable
+    for (let i = 0; i < nums.length; i++) {
+        result[i] = prefix;
+        prefix *= nums[i];
+    }
+
+    // Initialize a suffix variable to 1
+    let suffix = 1;
+
+    // Iterate in reverse order and multiple the result at each index to the suffix array and update the suffix array 
+    for (let i = nums.length - 1; i >= 0; i-- ) {
+        result[i] *= suffix;
+        suffix *= nums[i];
+    }
+
+    return result;
 };
