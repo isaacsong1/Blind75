@@ -15,13 +15,20 @@
         //-----------------------------------------
         // Time O(N) - linear
         // Space O(N) - linear
+        // Initialize an empty hash map
         const hash = Object.create(null);
+        // Iterate through the length of the nums array
         for (let i = 0; i < nums.length; i++) {
+            // Initialize a pointer to the current value of nums
             const currentEl = nums[i];
+            // Subtract the pointer to the target and see what value we are missing
             const missingEl = target - currentEl;
+            // If there is a matching key for the missing element,
             if (hash[missingEl] !== undefined) {
+                // Return an array of the index and what the missing value is
                 return [i, hash[missingEl]];
             }
+            // Set the keys of the hash map to each value of nums and the entry to the index
             hash[currentEl] = i
     }
     //-----------------------------------------
@@ -80,39 +87,45 @@
  * @return {number}
  */
 var maxProfit = function(prices) {
-    // Time: O(n)
-    // Space: O(1)
-    // let profit = 0;
-    // let buyPrice = prices[0];
-    // for (let i = 0; i < prices.length; i++) {
-    //     if (prices[i] < buyPrice) {
-    //         buyPrice = prices[i]
-    //     } else if (prices[i] - buyPrice > profit) {
-    //         profit = prices[i] - buyPrice;
-    //     }
-    // }
-    // return profit;
-    // -----
-    // Similar but alternate solution 
-    // let left = 0;// buy
-    // let right = 0; // sell
-    // let max_profit = 0;
-    // while (right < prices.length) {
-    //     if (prices[left] < prices[right]) {
-    //         let profit = prices[right] - prices[left]; // current profit
-    //         max_profit = Math.max(max_profit, profit);
-    //     } else {
-    //         left = right;
-    //     }
-    //     right ++;
-    // }
-    // return max_profit
-    // -----
+    /* NOT IDEAL SOLUTION
+        Time: O(n)
+        Space: O(1)
+        let profit = 0;
+        let buyPrice = prices[0];
+        for (let i = 0; i < prices.length; i++) {
+            if (prices[i] < buyPrice) {
+                buyPrice = prices[i]
+            } else if (prices[i] - buyPrice > profit) {
+                profit = prices[i] - buyPrice;
+            }
+        }
+        return profit;
+        -----
+        Similar but alternate solution 
+        let left = 0;// buy
+        let right = 0; // sell
+        let max_profit = 0;
+        while (right < prices.length) {
+            if (prices[left] < prices[right]) {
+                let profit = prices[right] - prices[left]; // current profit
+                max_profit = Math.max(max_profit, profit);
+            } else {
+                left = right;
+            }
+            right ++;
+        }
+        return max_profit
+    */
+
     // My final solution
     // Time: O(N)
     // Space: O(1)
+    // Initialize initial profit variable
     let profit = 0;
+    // Initialize initial buy price variable
     let buyPrice = prices[0];
+    // Iterate through the length of the prices array. If there is a lower buy price, update the buy price variable to the lower cost. Else, update the profit variable by taking the 
+    // maximum between the initial profit and the current price minus the price you bought the stock for.
     for (let i = 0; i < prices.length; i++) {
         if (prices[i] < buyPrice) {
             buyPrice = prices[i]
