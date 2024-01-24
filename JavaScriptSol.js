@@ -188,5 +188,6 @@ var containsDuplicate = function(nums) {
 */
 
 /* IDEA
-    
+    Initialize a pointer variable pointing to 0 initially and an empty array. Set up a while loop and initialize a total to 1. While the pointer is not the length, multiply all values 
+    where the index of the loop of not equal to the current index and append to array.
 */
