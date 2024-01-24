@@ -197,43 +197,48 @@ var containsDuplicate = function(nums) {
  * @return {number[]}
 */
 var productExceptSelf = function(nums) {
-    // Time: O(n)
-    // Space: O(n) (excluding the array)
-    // Initialize prefix array to keep track of multiples on the left
-    const prefix = [];
+    /* NOT IDEAL SOLUTION 
+        Time: O(n)
+        Space: O(n) (excluding the array)
+        Initialize prefix array to keep track of multiples on the left
+        const prefix = [];
 
-    // Calculate prefix
-    for (let i = 0; i < nums.length; i++) {
-        if (i === 0) {
-            // Set first index to 1 since nothing on the left
-            prefix[i] = 1;
-        } else {
-            // Else, multiply nums[i - 1] times prefix[i - 1] and set current index of prefix to that value
-            prefix[i] = nums[i - 1] * prefix [i - 1];
+        Calculate prefix
+        for (let i = 0; i < nums.length; i++) {
+            if (i === 0) {
+                Set first index to 1 since nothing on the left
+                prefix[i] = 1;
+            } else {
+                Else, multiply nums[i - 1] times prefix[i - 1] and set current index of prefix to that value
+                prefix[i] = nums[i - 1] * prefix [i - 1];
+            }
         }
-    }
 
-    // Initialize suffix array to keep track of multiples on the right
-    const suffix = [];
+        Initialize suffix array to keep track of multiples on the right
+        const suffix = [];
 
-    // Calculate suffix by looping backwards
-    for (let i = nums.length - 1; i >= 0; i--) {
-        if (i === nums.length - 1) {
-            // Set last position of suffix to 1 since nothing on the right
-            suffix[i] = 1;
-        } else {
-            // Else, multiply nums[i + 1] times suffix[i + 1] and set the current index of suffix to that value
-            suffix[i] = nums[i + 1] * suffix[i + 1];
+        Calculate suffix by looping backwards
+        for (let i = nums.length - 1; i >= 0; i--) {
+            if (i === nums.length - 1) {
+                Set last position of suffix to 1 since nothing on the right
+                suffix[i] = 1;
+            } else {
+                Else, multiply nums[i + 1] times suffix[i + 1] and set the current index of suffix to that value
+                suffix[i] = nums[i + 1] * suffix[i + 1];
+            }
         }
-    }
 
-    // Initialize our result array
-    const result = []
+        Initialize our result array
+        const result = []
 
-    // Loop one more time and set result equal to prefix times suffix
-    for (let i = 0; i < nums.length; i++) {
-        result[i] = prefix[i] * suffix[i];
-    }
+        Loop one more time and set result equal to prefix times suffix
+        for (let i = 0; i < nums.length; i++) {
+            result[i] = prefix[i] * suffix[i];
+        }
 
-    return result;
+        return result;
+    */
+
+    //! To reduce space complexity to O(1) (excluding the result array), we can eliminate the prefix and suffix array and update the result array twice.
+    
 };
