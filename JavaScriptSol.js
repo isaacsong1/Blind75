@@ -311,10 +311,9 @@ var productExceptSelf = function(nums) {
 */
 
 /* IDEA
-    Iterate through the nums array. Initialize a sum variable to keep track of the sum. If nums[i] is greater than the sum, add it to the count. Else if it is not bigger but the next 
-    index is bigger, then still add it. Else, do nothing. Return sum.
-
-    PROBLEM: In the first example, 4 is greater than -3 but it isn't part of the answer so my idea is flawed.
+    Initialize a max sum variable to the nums[0] to keep track of a contiguous sum. Iterate through the nums array starting at the second index (i = 1). We update nums[i] to the maximum
+    between 0 and the previous index (nums[i - 1]) to the current value nums[i] (nums[i] = Math.max(0, nums[i - 1]) + nums[i]). If nums[i] is greater than the maxSum, then update maxSum
+    to equal the current index. This will restart where we are starting the initial subarray count.
 */
 
 /**
@@ -322,14 +321,12 @@ var productExceptSelf = function(nums) {
  * @return {number}
  */
 var maxSubArray = function(nums) {
-    let maxSum = 0;
-
-    for (let i = 0; i < nums.length; i++) {
+    let maxSum = nums[0];
+    for (let i = 1; i < nums.length; i++) {
+        nums[i] = Math.max(0, nums[i - 1]) + nums[i]
         if (nums[i] > maxSum) {
-            maxSum += nums[i];
-        } else if (nums[i + 1] > nums[i]) {
-            maxSum += nums[i];
-        }   
+            maxSum = nums[i]
+        }
     }
 
     return maxSum;
