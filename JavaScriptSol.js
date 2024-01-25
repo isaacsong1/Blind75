@@ -321,9 +321,20 @@ var productExceptSelf = function(nums) {
  * @return {number}
  */
 var maxSubArray = function(nums) {
+    // Initialize maxSum to keep track of initial index of subarray
+    
     let maxSum = nums[0];
+    // Iterate through the loop...
     for (let i = 1; i < nums.length; i++) {
+        // At each iteration, we find the max between 0 and the previous index and add it to itself.
+        // Example 1: For i = 1, nums[i] = 1
+        //            nums[i] = Math.max(0, -2) + 1
+        //         -> nums[i] = 1
         nums[i] = Math.max(0, nums[i - 1]) + nums[i]
+        // If the current number is greater than the maxSum, update the maxSum to the current number
+        // Example 1: For i = 1, nums[i] = 1, maxSum = -2
+        //            1 > -2
+        //         -> maxSum = 1
         if (nums[i] > maxSum) {
             maxSum = nums[i]
         }
