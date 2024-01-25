@@ -311,5 +311,6 @@ var productExceptSelf = function(nums) {
 */
 
 /* IDEA
-    
+    Iterate through the nums array. Initialize a sum variable to keep track of the sum. If nums[i] is greater than the sum, add it to the count. Else if it is not bigger but the next 
+    index is bigger, then still add it. Else, do nothing. Return sum.
 */
