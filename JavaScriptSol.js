@@ -346,3 +346,31 @@ var maxSubArray = function(nums) {
 /*---------------------------------------------------------------------------------------------------*/
 
 //? 152. Maximum Product Subarray (https://leetcode.com/problems/maximum-product-subarray/description/)
+/* DIRECTIONS
+    Given an integer array nums, find a subarray that has the largest product, and return the product.
+
+    The test cases are generated so that the answer will fit in a 32-bit integer.
+*/  
+
+/* EXAMPLES
+1: 
+    Input: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    Output: 6
+    Explanation: The subarray [4, -1, 2, 1] has the largest sum 6.
+2:
+    Input: nums = [1]
+    Output: 1
+    Explanation: The subarray [1] has the largest sum 1.
+3: 
+    Input: nums = [5, 4, -1, 7, 8]
+    Output: 6
+    Explanation: The subarray [5, 4, -1, 7, 8] has the largest sum 23.
+*/
+
+/* CONSTRAINTS
+    
+*/
+
+/* IDEA
+    
+*/
