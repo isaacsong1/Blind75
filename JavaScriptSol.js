@@ -370,5 +370,7 @@ var maxSubArray = function(nums) {
 */
 
 /* IDEA
-    
+    Similar to the question above. Initialize maxProd, prevMax, prevMin as the first value of nums. Iterate through the given array starting at i = 1. Find the max among nums[i],
+    nums[i] * prevMax, and nums[i] * prevMin and store in a temporary variable. Update the prevMin to the same inputs before. Update the prevMax to the max we found in our temporary 
+    variable. Update our maxProd the the max between prevMax and our current maxProd.
 */
