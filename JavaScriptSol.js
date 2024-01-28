@@ -374,3 +374,23 @@ var maxSubArray = function(nums) {
     nums[i] * prevMax, and nums[i] * prevMin and store in a temporary variable. Update the prevMin to the same inputs before. Update the prevMax to the max we found in our temporary 
     variable. Update our maxProd the the max between prevMax and our current maxProd.
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxProduct = function(nums) {
+    let maxProd = nums[0];
+    let prevMax = nums[0];
+    let prevMin = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        let tempVar = Math.max(nums[i], nums[i] * prevMax, nums[i] * prevMin);
+        prevMin = Math.min(nums[i], nums[i] * prevMax, nums[i] * prevMin);
+        prevMax = tempVar;
+
+        maxProd = Math.max(prevMax, maxProd);
+    }
+
+    return maxProd
+};
