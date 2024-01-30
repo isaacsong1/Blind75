@@ -41,6 +41,9 @@
 
 ''' IDEA 
     Did this problem with cohort mates. Our initial idea was to initialize an empty list then use list methods to meet the requirements for the methods implemented (In comments).
+    Then we tried to optimize a little bit and came across deques or double-ended queues. These are preferred over lists when we need quicker append and pop operations from both
+    ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to a list that provides O(n) time complexity.
+    This is why we import collections (includes deque methods).
 '''
 
 import collections
