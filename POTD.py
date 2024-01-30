@@ -50,13 +50,15 @@ import collections
 class MyQueue:
 
     def __init__(self):
-        self.my_queue = []
+        # self.my_queue = []
+        self.my_queue = deque([])
 
     def push(self, x: int) -> None:
         self.my_queue.append(x)
 
     def pop(self) -> int:
-        return self.my_queue.pop(0)
+        # return self.my_queue.pop(0)
+        return self.my_queue.popleft()
 
     def peek(self) -> int:
         return self.my_queue[0]
