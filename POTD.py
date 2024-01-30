@@ -72,3 +72,26 @@ class MyQueue:
 # param_2 = obj.pop()
 # param_3 = obj.peek()
 # param_4 = obj.empty()
+    
+# ------------------------------------------------------------------------------------
+# 1/30/2024
+# 150. Evaluate Reverse Polish Notation (https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+
+'''
+
+''' CONSTRAINTS
+
+
+'''
+
+''' IDEA 
+
+'''
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        pass
