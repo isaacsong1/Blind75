@@ -91,7 +91,18 @@ class MyQueue:
 '''
 
 ''' EXAMPLES
-
+1.
+    Input: tokens = ["2", "1", "+", "3", "*"]
+    Output: 9 
+    Explanation: ((2 + 1) * 3) = 9
+2.
+    Input:
+    Output:
+    Explanation:
+3.
+    Input:
+    Output:
+    Explanation:
 '''
 
 ''' CONSTRAINTS
