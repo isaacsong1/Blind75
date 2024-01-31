@@ -119,6 +119,11 @@ class MyQueue:
 ''' IDEA 
     Original idea was to iterate through the array until we find an operator then compute what we need with the value before and the value before that. We ran into a problem where we
     were repeating a lot of lines of code and had to keep updating our index which resulted in slow run time and ugly code.
+
+    We kept trying and stumbled upon a solution that cleared it up. We used a stack (LIFO) which is a list. We iterate through the array and check if our value is an operator or not.
+    If it is an number, convert the string to an integer and append it to our stack. If it is an operator, pop the last two values and store in separate variables. Then we check what 
+    operator we are using then compute what we need using our two values. I ended up using a separate function to check the operator type and calculate the expression. Then append 
+    our new value to the stack. Return the last value in our stack.
 '''
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
