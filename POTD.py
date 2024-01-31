@@ -140,6 +140,8 @@ class Solution:
         ans = []
 
         # Better solution
+        # Time: O(n)
+        # Space: O(n)
         for token in tokens:
             if token in '+-*/':
                 int1 = ans.pop()
