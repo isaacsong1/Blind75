@@ -117,7 +117,8 @@ class MyQueue:
 '''
 
 ''' IDEA 
-
+    Original idea was to iterate through the array until we find an operator then compute what we need with the value before and the value before that. We ran into a problem where we
+    were repeating a lot of lines of code and had to keep updating our index which resulted in slow run time and ugly code.
 '''
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
