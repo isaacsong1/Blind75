@@ -197,9 +197,11 @@ class Solution:
 '''
 
 ''' IDEA 
-    
+    We are going to iterate through the array but we need to keep track of some things. We need an answer array of 0's with the same length as temperatures array. We can use a stack
+    to keep track of the indices and pop each item once a higher temperature is reached. This will take up more space since we are initializing a stack.
 '''
 
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        pass
+        
+
