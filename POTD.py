@@ -127,4 +127,19 @@ class MyQueue:
 '''
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        pass
+        ans = []
+
+        for token in tokens:
+            if token not in '+-*/':
+                ans.append(int(token))
+            else:
+                int1 = ans.pop()
+                if token == '+':
+                    ans[-1] += int1
+                elif token == '-':
+                    ans[-1] -= int1
+                elif token == '*':
+                    ans[-1] *= int1
+                else:
+                    ans[-1] = int(ans[-1] / int1)
+        return ans[0]
