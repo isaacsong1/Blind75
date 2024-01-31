@@ -175,14 +175,11 @@ class Solution:
 # 1/31/2024
 # 739. Daily Temperatures (https://leetcode.com/problems/daily-temperatures/description/?envType=daily-question&envId=2024-01-31)
 ''' DIRECTIONS
-    
+    Given an array of integers, temperatures, represents the daily temperatures, RETURN an ARRAY, answer, such that answer[i] is the number of days you have to wait after the ith day
+    to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
 '''
 
 ''' EXAMPLES
-1.
-    Input: 
-    Output: 
-    Explanation:
 
 '''
 
