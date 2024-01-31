@@ -77,7 +77,9 @@ class MyQueue:
 # 1/30/2024
 # 150. Evaluate Reverse Polish Notation (https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
 ''' DIRECTIONS
-    
+    You are given an array of strings (tokens) that represents an arithmetic expression in Reverse Polish Notation (http://en.wikipedia.org/wiki/Reverse_Polish_notation)
+
+    Evaluate the expression. Return an integer that represnets the value of the expression.
 '''
 
 ''' EXAMPLES
