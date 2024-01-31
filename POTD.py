@@ -170,3 +170,30 @@ class Solution:
         #         else:
         #             ans[-1] = int(ans[-1] / int1)
         # return ans[0]
+    
+# ------------------------------------------------------------------------------------
+# 1/31/2024
+# 739. Daily Temperatures (https://leetcode.com/problems/daily-temperatures/description/?envType=daily-question&envId=2024-01-31)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output: 
+    Explanation:
+
+'''
+
+''' CONSTRAINTS
+    
+'''
+
+''' IDEA 
+    
+'''
+
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        pass
