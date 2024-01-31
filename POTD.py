@@ -129,6 +129,9 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         ans = []
 
+
+        # Time: O(n)
+        # Space: O(n)
         for token in tokens:
             if token not in '+-*/':
                 ans.append(int(token))
