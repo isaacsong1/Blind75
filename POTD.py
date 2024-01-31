@@ -126,23 +126,35 @@ class MyQueue:
     our new value to the stack. Return the last value in our stack.
 '''
 class Solution:
+    def calculator(self, int1, int2, operator):
+        if operator == '+':
+            return int2 + int1
+        elif operator == '-':
+            return int2 - int1
+        elif operator == '*':
+            return int2 * int1
+        else:
+            return int(int2 / int1)
     def evalRPN(self, tokens: List[str]) -> int:
         ans = []
 
+        # Better solution
+        
 
+        # Alternate solution (no outside function)
         # Time: O(n)
         # Space: O(n)
-        for token in tokens:
-            if token not in '+-*/':
-                ans.append(int(token))
-            else:
-                int1 = ans.pop()
-                if token == '+':
-                    ans[-1] += int1
-                elif token == '-':
-                    ans[-1] -= int1
-                elif token == '*':
-                    ans[-1] *= int1
-                else:
-                    ans[-1] = int(ans[-1] / int1)
-        return ans[0]
+        # for token in tokens:
+        #     if token not in '+-*/':
+        #         ans.append(int(token))
+        #     else:
+        #         int1 = ans.pop()
+        #         if token == '+':
+        #             ans[-1] += int1
+        #         elif token == '-':
+        #             ans[-1] -= int1
+        #         elif token == '*':
+        #             ans[-1] *= int1
+        #         else:
+        #             ans[-1] = int(ans[-1] / int1)
+        # return ans[0]
