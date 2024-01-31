@@ -203,5 +203,30 @@ class Solution:
 
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        
+        # Length of temperatures array
+        n = len(temperatures)
+        # Array of 0's of length n
+        answer = [0] * n
+        # Initialize stack
+        stack = []
+
+        # Iterate from 0 to n...
+        for i in range(n):
+            # Save current temperature
+            curr_temp = temperatures[i]
+
+            # While stack in not empty and our curr_temp is greater than the temperature at the last index recorded in the stack, pop the index from the stack and save the value in a 
+            # variable. Update the answer at that index to i - the index.
+            # Explanation for Ex 1: At i = 1: stack = [0]
+            #                                 curr_temp = 74
+            #                                 temperatures[stack[-1]] = 73
+            #                                 item_index = 0
+            #                                 answer[0] = 1 - 0 = 1
+            while stack and curr_temp > temperatures[stack[-1]]:
+                item_index = stack.pop()
+                answer[item_index] = i - item_index
+
+            stack.append(i)
+
+        return answer
 
