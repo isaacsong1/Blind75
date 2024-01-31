@@ -135,11 +135,21 @@ class Solution:
             return int2 * int1
         else:
             return int(int2 / int1)
+        
     def evalRPN(self, tokens: List[str]) -> int:
         ans = []
 
         # Better solution
-        
+        for token in tokens:
+            if token in '+-*/':
+                int1 = ans.pop()
+                int2 = ans.pop()
+                operator = token
+                temp_ans = self.calculator(int1, int2, operator)
+                ans.append(int(temp_ans))
+            else: 
+                ans.append(int(token))
+        return ans.pop()
 
         # Alternate solution (no outside function)
         # Time: O(n)
