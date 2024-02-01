@@ -202,6 +202,8 @@ class Solution:
 '''
 
 class Solution:
+    # Time: O(n)
+    # Space: O(2n) = O(n)
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         # Length of temperatures array
         n = len(temperatures)
