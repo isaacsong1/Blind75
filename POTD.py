@@ -232,3 +232,24 @@ class Solution:
 
         return answer
 
+# ------------------------------------------------------------------------------------
+# 2/1/2024
+# 2966. Divide Array Into Arrays With Max Difference (https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/description/?envType=daily-question&envId=2024-02-01)
+''' DIRECTIONS
+
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output:
+
+'''
+
+''' CONSTRAINTS
+
+'''
+
+''' IDEA 
+
+'''
