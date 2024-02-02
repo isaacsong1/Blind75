@@ -319,5 +319,22 @@ class Solution:
     I glimpsed at the solutions since I was not sure where to start. There two approaches.
     Approach 1:
         We can store a sequence from 1 to 9 in a string and an empty array for our answer. We will use a nested for loop with fixed bounds. The outer loop will be from 0 to 9 and the
-        inner loop will iterate from 1 to 10. We use the indeces to grab sections of the string and check if our number is within the bounds. If it is, append to answer array.
+        inner loop will iterate from i + 1 to 10. We use the indeces to grab sections of the string and check if our number is within the bounds. If it is, append to answer array.
+        Sort answer array. Return answer array.
+    Approach 2:
 '''
+
+class Solution:
+    def sequentialDigits(self, low: int, high: int) -> List[int]:
+        sequence = '123456789'
+        answer = []
+
+        for i in range(0, len(sequence)):
+            for j in range (i + 1, len(sequence) + 1):
+                curr_num = int(sequence[i:j])
+                if low <= curr_num <= high:
+                    answer.append(curr_num)
+        
+        answer.sort()
+
+        return answer
