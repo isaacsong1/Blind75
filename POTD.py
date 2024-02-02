@@ -316,5 +316,8 @@ class Solution:
 '''
 
 ''' IDEA 
-    
+    I glimpsed at the solutions since I was not sure where to start. There two approaches.
+    Approach 1:
+        We can store a sequence from 1 to 9 in a string and an empty array for our answer. We will use a nested for loop with fixed bounds. The outer loop will be from 0 to 9 and the
+        inner loop will iterate from 1 to 10. We use the indeces to grab sections of the string and check if our number is within the bounds. If it is, append to answer array.
 '''
