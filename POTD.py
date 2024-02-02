@@ -270,3 +270,17 @@ class Solution:
     first index and every third value after that which we can achieve by denoting a step count. At each 3rd value, we check if the difference between nums[i] and nums]i + 2] is less
     than or equal to k. If it is, append nums[i], nums[i + 1], and nums[i + 2] to an answer array. Else, return empty array.
 '''
+
+class Solution:
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        n = len(nums)
+        nums.sort()
+        answer = []
+
+        for i in range(0, n, 3):
+            if nums[i + 2] - nums[i] <= k:
+                answer.append([nums[i], nums[i + 1], nums[i + 2]])
+            else:
+                return []
+        return answer
+        
