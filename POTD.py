@@ -322,19 +322,40 @@ class Solution:
         inner loop will iterate from i + 1 to 10. We use the indeces to grab sections of the string and check if our number is within the bounds. If it is, append to answer array.
         Sort answer array. Return answer array.
     Approach 2:
+        Iterate from 1 to 9. For each digit, initialize a variable to store the next index value. Build a sequential number by adding consecutive digits until reaching 9 or exceeding
+        the high value. Add valid sequential numbers to an answer list. Sort the list and return.
 '''
 
 class Solution:
     def sequentialDigits(self, low: int, high: int) -> List[int]:
-        sequence = '123456789'
+        # Approach 1:
+        # Time: O(1)
+        # Space: O(1)
+        # sequence = '123456789'
+        # answer = []
+
+        # for i in range(0, len(sequence)):
+        #     for j in range (i + 1, len(sequence) + 1):
+        #         curr_num = int(sequence[i:j])
+        #         if low <= curr_num <= high:
+        #             answer.append(curr_num)
+        
+        # answer.sort()
+
+        # return answer
+        # ---------------------------
+        # Approach 2:
         answer = []
 
-        for i in range(0, len(sequence)):
-            for j in range (i + 1, len(sequence) + 1):
-                curr_num = int(sequence[i:j])
+        for i in range(1, 10):
+            curr_num = i
+            next_num = i + 1
+
+            while curr_num <= high and next_num <= 9:
+                curr_num = curr_num * 10 + next_num
                 if low <= curr_num <= high:
                     answer.append(curr_num)
-        
-        answer.sort()
+                next_num += 1
 
+        answer.sort()
         return answer
