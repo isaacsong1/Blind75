@@ -297,7 +297,9 @@ class Solution:
 # 2/2/2024
 # 1291. Sequential Digits (https://leetcode.com/problems/sequential-digits/?envType=daily-question&envId=2024-02-02)
 ''' DIRECTIONS
-    
+    An integer has sequential digits if and only if each digit in the number is one more than the previous digit.
+
+    RETURN a SORTED list of all the integers in the range [low, high] inclusive that have sequential digits.
 '''
 
 ''' EXAMPLES
