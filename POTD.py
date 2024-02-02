@@ -312,7 +312,7 @@ class Solution:
 '''
 
 ''' CONSTRAINTS
-    
+    10 <= low <= high <= 10^9
 '''
 
 ''' IDEA 
