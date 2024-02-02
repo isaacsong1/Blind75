@@ -345,6 +345,8 @@ class Solution:
         # return answer
         # ---------------------------
         # Approach 2:
+        # Time: O(1)
+        # Space: O(1)
         answer = []
 
         for i in range(1, 10):
