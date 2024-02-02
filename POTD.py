@@ -273,14 +273,21 @@ class Solution:
 
 class Solution:
     def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        # Store length of nums array
         n = len(nums)
+        # Destructively sort nums
         nums.sort()
+        # Initialize empty answer array
         answer = []
 
+        # Iterate from 0 to n in step size of 3...
         for i in range(0, n, 3):
+            # Check if difference is less than or equal to k
             if nums[i + 2] - nums[i] <= k:
+                # Append values to answer array (in an array of 3 integers)
                 answer.append([nums[i], nums[i + 1], nums[i + 2]])
             else:
+                # Return empty array otherwise
                 return []
         return answer
         
