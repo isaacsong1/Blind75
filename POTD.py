@@ -266,5 +266,7 @@ class Solution:
 '''
 
 ''' IDEA 
-
+    We know that n will be a multiple of 3 so we don't need to check that. We first want to sort the array since the outputs appear sorted. Once we have that, we want to check the
+    first index and every third value after that which we can achieve by denoting a step count. At each 3rd value, we check if the difference between nums[i] and nums]i + 2] is less
+    than or equal to k. If it is, append nums[i], nums[i + 1], and nums[i + 2] to an answer array. Else, return empty array.
 '''
