@@ -273,6 +273,8 @@ class Solution:
 
 class Solution:
     def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        # Time: O(n)
+        # Space: O(n)
         # Store length of nums array
         n = len(nums)
         # Destructively sort nums
