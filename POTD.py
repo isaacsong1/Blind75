@@ -392,13 +392,19 @@ class Solution:
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+        # Initialize empty dictionary
         letter_count = {}
 
+        # Iterate through the letters in s...
         for letter in s:
+            # Get the current count of the letter and increment by one. If none, set the initial value to 0 and add 1.
             letter_count[letter] = letter_count.get(letter, 0) + 1
 
+        # Iterate through the index and letter in s
         for index, letter in enumerate(s):
+            # If the letter appeared only once, return the index
             if letter_count[letter] == 1:
                 return index
-        
+            
+        # Return -1 if no unique letters
         return -1
