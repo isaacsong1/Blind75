@@ -386,5 +386,6 @@ class Solution:
 '''
 
 ''' IDEA 
-    
+    Iterate through the string and use a dictionary to keep track of how many times a letter appears. Then iterate through the index of the string until you find where the value is 1
+    and RETURN the index.
 '''
