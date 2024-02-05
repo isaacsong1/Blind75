@@ -382,7 +382,7 @@ class Solution:
 '''
 
 ''' CONSTRAINTS
-    
+    1 <= s.length <= 10^5
 '''
 
 ''' IDEA 
