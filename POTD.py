@@ -361,3 +361,25 @@ class Solution:
 
         answer.sort()
         return answer
+
+# ------------------------------------------------------------------------------------
+# 2/2/2024
+# 387. First Unique Character in String (https://leetcode.com/problems/first-unique-character-in-a-string/description/?envType=daily-question&envId=2024-02-05)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output:
+
+'''
+
+''' CONSTRAINTS
+    
+'''
+
+''' IDEA 
+    
+'''
