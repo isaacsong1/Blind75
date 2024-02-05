@@ -392,6 +392,8 @@ class Solution:
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
+        # Time: O(n)
+        # Space: O(U) (U is # of characters in s)
         # Initialize empty dictionary
         letter_count = {}
 
