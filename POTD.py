@@ -445,3 +445,18 @@ class Solution:
         original string using the index given from the sorted letters. Else, create a new key in the hashmap for the sorted string and set the key to the length of the answer array.
         Then append the unsorted string in an array to the answer array. RETURN answer.
 '''
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        answer = []
+        hashmap = {}
+
+        for string in strs:
+            sorted_string = ''.join(sorted(string))
+            if sorted_string in hashmap:
+                answer[hashmap[sorted_string]].append(string)
+            else:
+                hashmap[sorted_string] = len(answer)
+                answer.append([string])
+        
+        return answer
