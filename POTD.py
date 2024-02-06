@@ -448,6 +448,8 @@ class Solution:
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # Time: O(n * k * logk) (k is the length of the longest string in strs)
+        # Space: O(n * k) (k is the length of the longest string in strs)
         answer = []
         hashmap = {}
 
