@@ -417,7 +417,7 @@ class Solution:
 ''' DIRECTIONS
     Given an array of strings, strs, group the anagrams together. You can return the answer in any order.
 
-    An Anagram is a word or phrase formed by rearranging the letters of a different word or pgrase, typically using all the original letters exactly once.
+    An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 '''
 
 ''' EXAMPLES
@@ -439,5 +439,9 @@ class Solution:
 '''
 
 ''' IDEA 
-    
+    One idea:
+        Initialize an empty array for the answer. Initialize an empty hashmap to map the sorted version of the string to the key and the index of the answer array as the value.
+        Iterate through each string in strs. For each string, sort it and join the letters into one string. If there is an occurence of the letters in the hashmap, append the
+        original string using the index given from the sorted letters. Else, create a new key in the hashmap for the sorted string and set the key to the length of the answer array.
+        Then append the unsorted string in an array to the answer array.
 '''
