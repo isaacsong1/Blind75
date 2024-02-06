@@ -415,7 +415,9 @@ class Solution:
 # 2/2/2024
 # 49. Group Anagrams (https://leetcode.com/problems/group-anagrams/description/?envType=daily-question&envId=2024-02-06)
 ''' DIRECTIONS
-    
+    Given an array of strings, strs, group the anagrams together. You can return the answer in any order.
+
+    An Anagram is a word or phrase formed by rearranging the letters of a different word or pgrase, typically using all the original letters exactly once.
 '''
 
 ''' EXAMPLES
