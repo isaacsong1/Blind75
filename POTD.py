@@ -422,8 +422,14 @@ class Solution:
 
 ''' EXAMPLES
 1.
-    Input: 
-    Output: 
+    Input: strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+    Output: [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+2.
+    Input: strs = [""]
+    Output: [[""]]
+3.
+    Input: strs = ["a"]
+    Output: [["a"]]
 '''
 
 ''' CONSTRAINTS
