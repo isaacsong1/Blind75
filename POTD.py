@@ -373,10 +373,10 @@ class Solution:
 1.
     Input: s = "leetcode"
     Output: 0
-1.
+2.
     Input: s = "loveleetcode"
     Output: 2
-1.
+3.
     Input: s = "aabb"
     Output: -1
 '''
@@ -410,3 +410,24 @@ class Solution:
             
         # Return -1 if no unique letters
         return -1
+    
+# ------------------------------------------------------------------------------------
+# 2/2/2024
+# 49. Group Anagrams (https://leetcode.com/problems/group-anagrams/description/?envType=daily-question&envId=2024-02-06)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output: 
+'''
+
+''' CONSTRAINTS
+    
+'''
+
+''' IDEA 
+    
+'''
