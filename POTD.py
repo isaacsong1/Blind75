@@ -450,15 +450,22 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # Time: O(n * k * logk) (k is the length of the longest string in strs)
         # Space: O(n * k) (k is the length of the longest string in strs)
+        # Initialize answer array and hashmap dictionary
         answer = []
         hashmap = {}
 
+        # Iterate through strs...
         for string in strs:
+            # Sort the string and join letters into one string
             sorted_string = ''.join(sorted(string))
+            # Check if the sorted string is in our hashmap
             if sorted_string in hashmap:
+                # If so, grab the index value and append string to corresponding array
                 answer[hashmap[sorted_string]].append(string)
             else:
+                # If not, set the key, value to sorted string and length of answer array
                 hashmap[sorted_string] = len(answer)
+                # Append unsorted string in an array to answer array
                 answer.append([string])
-        
+        # Return answer
         return answer
