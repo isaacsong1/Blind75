@@ -502,3 +502,26 @@ class Solution:
 ''' IDEA 
     
 '''
+
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        # s = sorted(s)
+        # # creat dict for character frequency
+        # freq = {}
+
+        # # iterate through string and increment frequency count
+        # for char in s:
+        #     if char in freq:
+        #         freq[char] += 1
+        #     else:
+        #         freq[char] = 1
+
+        # # create a string and concat each char the correct number of times...
+        # my_list = []
+        # for key, val in freq.items():
+        #     my_list.append(key * val)
+
+        # # list of sub strings and sort by len using lambda
+        # answer = sorted(my_list, key=len, reverse=True)
+        
+        # return "".join(answer)  
