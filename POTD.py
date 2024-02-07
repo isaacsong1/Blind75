@@ -363,7 +363,7 @@ class Solution:
         return answer
 
 # ------------------------------------------------------------------------------------
-# 2/2/2024
+# 2/5/2024
 # 387. First Unique Character in String (https://leetcode.com/problems/first-unique-character-in-a-string/description/?envType=daily-question&envId=2024-02-05)
 ''' DIRECTIONS
     Given a string, s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
@@ -412,7 +412,7 @@ class Solution:
         return -1
     
 # ------------------------------------------------------------------------------------
-# 2/2/2024
+# 2/6/2024
 # 49. Group Anagrams (https://leetcode.com/problems/group-anagrams/description/?envType=daily-question&envId=2024-02-06)
 ''' DIRECTIONS
     Given an array of strings, strs, group the anagrams together. You can return the answer in any order.
@@ -469,3 +469,25 @@ class Solution:
                 answer.append([string])
         # Return answer
         return answer
+    
+# ------------------------------------------------------------------------------------
+# 2/7/2024
+# 451. Sort Characters By Frequency (https://leetcode.com/problems/sort-characters-by-frequency/description/?envType=daily-question&envId=2024-02-07)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output: 
+
+'''
+
+''' CONSTRAINTS
+    
+'''
+
+''' IDEA 
+    
+'''
