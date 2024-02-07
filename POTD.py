@@ -495,7 +495,8 @@ class Solution:
 '''
 
 ''' CONSTRAINTS
-    
+    1 <= s.length <= 5*10^5
+    s consists of uppercase and lower case English letters and digits
 '''
 
 ''' IDEA 
