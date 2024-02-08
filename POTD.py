@@ -566,6 +566,8 @@ class Solution:
 
 class Solution:
     def numSquares(self, n: int) -> int:
+        # Time: O(n * sqrt(n))
+        # Space: O(n)
         dp = [float('inf')] * (n + 1)
         dp[0] = 0
 
