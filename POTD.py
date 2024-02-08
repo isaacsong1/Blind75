@@ -557,7 +557,7 @@ class Solution:
 '''
 
 ''' CONSTRAINTS
-
+    1 <= n <= 10^4
 '''
 
 ''' IDEA 
