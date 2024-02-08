@@ -534,3 +534,24 @@ class Solution:
             freq, char = heapq.heappop(pq)
             result += char * -freq
         return result
+    
+# ------------------------------------------------------------------------------------
+# 2/8/2024
+# 279. Perfect Squares (https://leetcode.com/problems/perfect-squares/description/?envType=daily-question&envId=2024-02-08)
+''' DIRECTIONS
+
+'''
+
+''' EXAMPLES
+1.
+
+
+'''
+
+''' CONSTRAINTS
+
+'''
+
+''' IDEA 
+    
+'''
