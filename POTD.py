@@ -561,7 +561,19 @@ class Solution:
 '''
 
 ''' IDEA 
-    Start a while loop and iterate while our number is not 0. 
+    Got stuck and had to search up the solution.
+    The method used is called Dynamic Programming. Dynamic programming is used whenever we see a recursive solution that has repeated calls for same inputs and want to optimize it. The
+    idea is to store the results of subproblems so we do not have to re-compute them when needed later.
+
+    1. In the code, dynamic programming is used when we find the minimum number of perfect squares that sum up to the given number n.
+
+    2. Initialize a list dp of size n + 1 where each element is initialized to INT_MAX, except dp[0] which is set to 0 since it doesn't require any perfect squares to represent.
+
+    3. Iterate from 1 to n to calculate the minimum number of perfect squares required for each number.
+
+    4. Inner loop: For each number i, iterate over all perfect squares less than or equal to i to find the minimum numbner of perfect squares required.
+
+    5. Update dp[i] with the minimum value found by comparing it with the current value of dp[i - j * j] + 1, where j * j represents the perfect square being considered.
 '''
 
 class Solution:
