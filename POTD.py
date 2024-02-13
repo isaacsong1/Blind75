@@ -645,5 +645,12 @@ class Solution:
 '''
 
 ''' IDEA 
-
+    Iterate through each word in the array. Check if the reverse version of the string is the same as the regular. If it is, return the string. If not, return empty string.
 '''
+
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        for string in words:
+            if string == string[::-1]:
+                return string
+        return ""
