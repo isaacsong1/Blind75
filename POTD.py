@@ -613,3 +613,25 @@ class Solution:
 ''' IDEA 
 
 '''
+
+# ------------------------------------------------------------------------------------
+# 2/13/2024
+# 2108. Find First Palindromic String in the Array (https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/?envType=daily-question&envId=2024-02-13)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output: 
+    Explanation:
+'''
+
+''' CONSTRAINTS
+
+'''
+
+''' IDEA 
+
+'''
