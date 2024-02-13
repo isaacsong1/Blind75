@@ -650,6 +650,8 @@ class Solution:
 
 class Solution:
     def firstPalindrome(self, words: List[str]) -> str:
+        # Time: O(n) (n is the length of words array)
+        # Space: O(1)
         for string in words:
             if string == string[::-1]:
                 return string
