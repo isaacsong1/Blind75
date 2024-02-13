@@ -639,7 +639,9 @@ class Solution:
 '''
 
 ''' CONSTRAINTS
-
+    1 <= words.length <= 100
+    1 <= words[i].length <= 100
+    words[i] consists only of lowercase English letters
 '''
 
 ''' IDEA 
