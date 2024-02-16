@@ -702,6 +702,8 @@ class Solution:
             - We increment the counter 'count' because even though the element v[i] remains partially, it still contributes to the count of unique integers that need to be removed.
 '''
 
+# Time: O(nlogn)
+# Space: O(n)
 # /**
 #  * @param {number[]} arr
 #  * @param {number} k
