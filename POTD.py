@@ -658,7 +658,7 @@ class Solution:
         return ""
 
 # ------------------------------------------------------------------------------------
-# 2/16/2024
+# 2/16/2024 (Javascript)
 # 1481. Least Number of of Unique Integers after K Removals (https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/description/?envType=daily-question&envId=2024-02-16)
 ''' DIRECTIONS
     Given an array of integers, arr, and an integer k. Find the least number of unique integers aftrer removing exactly k elements.
@@ -685,5 +685,12 @@ class Solution:
     (Peeked at solution)
     First idea that came into my head was to use an unordered map to keep track of how often the numbers appear.
     Here is where the solution helped:
-        
+        Store the values of the map in its own array. We need to check 2 conditions to get the array of minimum unique elements.
+        1.
+            k > v[i]
+            - If the remaining removal count k is greater than the current frequency v[i]. it implies that we can completely remove all occurrences of the current element represented by
+            v[i] from the array without exhausting k.
+            - In this case, we subtract v[i] from k (indicating that we have accounted for removing v[i] occurrences of the current element) and set v[i] to 0 (indicating that this
+            element is fully removed).
+            - We do not increment the counter 'count' because the element v[i] has been fully removed.
 '''
