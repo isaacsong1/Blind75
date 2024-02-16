@@ -670,13 +670,15 @@ class Solution:
     Output: 1
     Explanation: Remove the single 4 and only 5 is left.
 2.
-    Input: arr = [5, 5, 4], k = 1
+    Input: arr = [4, 3, 1, 1, 3, 3, 2], k = 3
     Output: 1
-    Explanation: Remove the single 4 and only 5 is left.
+    Explanation: Remove 3, 2 and either one of the two 1's or three 3's. 1 and 3 will be left.
 '''
 
 ''' CONSTRAINTS
-    
+    1 <= arr.length <= 10^5
+    1 <= arr[i] <= 10^9
+    0 <= k <= arr.length
 '''
 
 ''' IDEA 
