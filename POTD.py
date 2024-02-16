@@ -656,3 +656,26 @@ class Solution:
             if string == string[::-1]:
                 return string
         return ""
+
+# ------------------------------------------------------------------------------------
+# 2/13/2024
+# 1481. Least Number of of Unique Integers after K Removals (https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/description/?envType=daily-question&envId=2024-02-16)
+''' DIRECTIONS
+    
+'''
+
+''' EXAMPLES
+1.
+    Input: 
+    Output: 
+    Explanation: 
+
+'''
+
+''' CONSTRAINTS
+    
+'''
+
+''' IDEA 
+    
+'''
