@@ -693,4 +693,11 @@ class Solution:
             - In this case, we subtract v[i] from k (indicating that we have accounted for removing v[i] occurrences of the current element) and set v[i] to 0 (indicating that this
             element is fully removed).
             - We do not increment the counter 'count' because the element v[i] has been fully removed.
+        2.
+            k <= v[i]
+            - If the remaining removal count k is less than or equal to the current frequency v[i], it means that we can only partially remove the occurences of the current element
+            represented by v[i] from the array without exhausting k.
+            - In this case, we can subtract k from v[i] (indicating that we have partially removed k occurrences of the current element) and set k to 0 (indicating that we have exhausted
+            our removal count k).
+            - We increment the counter 'count' because even though the element v[i] remains partially, it still contributes to the count of unique integers that need to be removed.
 '''
