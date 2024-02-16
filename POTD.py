@@ -682,5 +682,8 @@ class Solution:
 '''
 
 ''' IDEA 
-    
+    (Peeked at solution)
+    First idea that came into my head was to use an unordered map to keep track of how often the numbers appear.
+    Here is where the solution helped:
+        
 '''
