@@ -31,3 +31,5 @@ Why things are like this :
     If you get through a several hard problems, you are probably pretty good at developing optimal algorithms.
 - Basis data structure and algoithm knowledge is useful:
     In the chances that trees, graphs, lists, sorting, and other knowledge comes up, it is valuable to know beforehand. It is hard to use a binary search tree if you don't know what it is. If you do know, then you pretty much know the basics.
+
+Whiteboards allow for increased communication.
