@@ -20,4 +20,10 @@ Assessment of your performance breakdown:
 - CULTURE FIT / COMMUNICATION SKILLS :
     Do your personality and values fit with the company and team? Did you communicate well with your interviewer?
 
-    
+Standard algorithm questions may be based on the first three.
+
+
+Why things are like this :
+    Each complaint about the process comes with a valid reasoning.
+- False negatives are acceptable:
+    Interviewers are far more concerned with false positives: people who do well in an interview but are not in fact very good.
