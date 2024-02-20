@@ -27,3 +27,7 @@ Why things are like this :
     Each complaint about the process comes with a valid reasoning.
 - False negatives are acceptable:
     Interviewers are far more concerned with false positives: people who do well in an interview but are not in fact very good.
+- Problem-solving skills are valuable:
+    If you get through a several hard problems, you are probably pretty good at developing optimal algorithms.
+- Basis data structure and algoithm knowledge is useful:
+    In the chances that trees, graphs, lists, sorting, and other knowledge comes up, it is valuable to know beforehand. It is hard to use a binary search tree if you don't know what it is. If you do know, then you pretty much know the basics.
