@@ -75,5 +75,30 @@
 */
 
 /* IDEA
-    
+    My initial idea is to go iterate through each character in the string and have conditional statements to check whether or not the closing bracket is correct.
+
+    I thought that this would be inefficient and thought I would go with a stack. We check if the value is an opening bracket and add it to the stack. If not, we check which opening
+    bracket is in the stack and check if the current closing is the same. If it is, pop the last value. If they are not the same return false.
 */
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isValid = function(s) {
+    const stack = [];
+    for (let c of s) {
+        if (c === '(' || '[' || '{' ) {
+            stack.append(c);
+        } else {
+            if (!stack.length ||
+                (c === '(' && stack[stack.length - 1] !== '(') ||
+                (c === '{' && stack[stack.length - 1] !== '{') ||
+                (c === '[' && stack[stack.length - 1] !== '[')) {
+                return false;
+            }
+            stack.pop();
+        }
+    }
+    return true;
+};
