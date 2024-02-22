@@ -47,3 +47,25 @@
 /*---------------------------------------------------------------------------------------------------*/
 
 //? 20. Valid Parentheses (https://leetcode.com/problems/valid-parentheses/description/)
+
+/* DIRECTIONS
+    
+*/  
+
+/* EXAMPLES
+1:  
+    Input: 
+    Output: 
+    Explanation: 
+
+2:
+    
+*/
+
+/* CONSTRAINTS
+    
+*/
+
+/* IDEA
+    
+*/
