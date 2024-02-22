@@ -86,6 +86,8 @@
  * @return {boolean}
  */
 var isValid = function(s) {
+    // Time: O(n)
+    // Space: O(n)
     const stack = [];
     for (let c of s) {
         if (c === '(' || c === '[' || c === '{' ) {
