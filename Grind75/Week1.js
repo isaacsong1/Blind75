@@ -104,3 +104,73 @@ var isValid = function(s) {
     }
     return !stack.length;
 };
+
+/*---------------------------------------------------------------------------------------------------*/
+
+//? 21. Merge Two Sorted Lists (https://leetcode.com/problems/merge-two-sorted-lists/description/)
+//! Done during bootcamp
+
+/* DIRECTIONS
+    You are given the heads of two sorted linked lists list1 and list2.
+
+    Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+    
+    Return the head of the merged linked list.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: list1 = [1, 2, 4], list2 = [1, 3, 4]
+    Output: [1, 1, 2, 3, 4, 4]
+2:
+    Input: list1 = [], list2 = []
+    Output: []
+3:
+    Input: list1 = [], list2 = [0]
+    Output: [0]
+*/
+
+/* CONSTRAINTS
+    The number of nodes in both lists is in the range [0, 50]
+    -100 <= Node.val <= 100
+    Both list1 and list2 are sorted in non-decreasing order
+*/
+
+/* IDEA
+    This will be a recursive solution in JavaScript. We did this during our algo club and used Python. We went over two solution, one iterative (O(n) time where N is # of nodes
+    in the smallest list and O(1)). Another is the recursive solution where both time and space complexities are O(n) where N is the number of nodes in the list that has the highest
+    count of small elements for Time and N is the # of recursive calls stored in the stack
+
+    I will be going for the recursive solution.
+    First we check if our lists are empty and return either list if they are.
+    Then, we check if list1.val < list2.val. If it is, we recursively call our function again using list1.next and list2 and return list1. Else, recursively call our function using 
+    list1 and list2.next and return list2.
+    
+*/
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */
+// Time: O(N) where N is the # of nodes in the list that has the highest count of small els
+// Space: O(N) where N is the # of recursive calls stored in the stack
+var mergeTwoLists = function(list1, list2) {
+    if (!list1 || !list2) {
+        return list1 || list2;
+    }
+    if (list1.val < list2.val) {
+        list1.next = mergeTwoLists(list1.next, list2);
+        return list1;
+    } else {
+        list2.next = mergeTwoLists(list1, list2.next)
+        return list2;
+    }
+};
