@@ -137,5 +137,13 @@ var isValid = function(s) {
 */
 
 /* IDEA
+    This will be a recursive solution in JavaScript. We did this during our algo club and used Python. We went over two solution, one iterative (O(n) time where N is # of nodes
+    in the smallest list and O(1)). Another is the recursive solution where both time and space complexities are O(n) where N is the number of nodes in the list that has the highest
+    count of small elements for Time and N is the # of recursive calls stored in the stack
+
+    I will be going for the recursive solution.
+    First we check if our lists are empty and return either list if they are.
+    Then, we check if list1.val < list2.val. If it is, we recursively call our function again using list1.next and list2 and return list1. Else, recursively call our function using 
+    list1 and list2.next and return list2.
     
 */
