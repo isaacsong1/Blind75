@@ -160,6 +160,8 @@ var isValid = function(s) {
  * @param {ListNode} list2
  * @return {ListNode}
  */
+// Time: O(N) where N is the # of nodes in the list that has the highest count of small els
+// Space: O(N) where N is the # of recursive calls stored in the stack
 var mergeTwoLists = function(list1, list2) {
     if (!list1 || !list2) {
         return list1 || list2;
