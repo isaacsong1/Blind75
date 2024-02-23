@@ -174,3 +174,93 @@ var mergeTwoLists = function(list1, list2) {
         return list2;
     }
 };
+
+//? 121. Best Time to Buy and Sell Stock (https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+//! Practice Whiteboard Coding
+// R - Repeat the problem
+// E - Write out examples
+// A - Describe your approaches
+// C - Write your code
+// T - Test
+// O - Optimization
+
+/* DIRECTIONS
+    You are given an array (prices) where prices[i] is the price of the given stock on the ith day. You want to maximize your profit by choosing ONE day to buy one stock and 
+    choosing a DIFFERENT day to sell it. 
+    RETURN: The maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: prices = [7, 1, 5, 3, 6, 4]
+    Output: 5
+    Explanation: Day 2 (price = 1) and sell day 5 (prices = 6)
+
+2:
+    Input: prices = [7, 6, 4, 3, 1]
+    Output: 0
+    Explanation: No profits
+*/
+
+/* CONSTRAINTS
+    1 <= prices.length <= 10^5
+    0 <= prices[i] <= 10^4
+*/
+
+/* IDEA
+    Loop through the array once. Store first value in a variable to represent buy price. Then next iteration, compare if there is profit. If no profit, update buy variable and iterate
+*/
+
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function(prices) {
+    /* NOT IDEAL SOLUTION
+        Time: O(n)
+        Space: O(1)
+        let profit = 0;
+        let buyPrice = prices[0];
+        for (let i = 0; i < prices.length; i++) {
+            if (prices[i] < buyPrice) {
+                buyPrice = prices[i]
+            } else if (prices[i] - buyPrice > profit) {
+                profit = prices[i] - buyPrice;
+            }
+        }
+        return profit;
+        -----
+        Similar but alternate solution 
+        let left = 0;// buy
+        let right = 0; // sell
+        let max_profit = 0;
+        while (right < prices.length) {
+            if (prices[left] < prices[right]) {
+                let profit = prices[right] - prices[left]; // current profit
+                max_profit = Math.max(max_profit, profit);
+            } else {
+                left = right;
+            }
+            right ++;
+        }
+        return max_profit
+    */
+
+    // My final solution
+    // Time: O(N)
+    // Space: O(1)
+    // Initialize initial profit variable
+    let profit = 0;
+    // Initialize initial buy price variable
+    let buyPrice = prices[0];
+    // Iterate through the length of the prices array. If there is a lower buy price, update the buy price variable to the lower cost. Else, update the profit variable by taking the 
+    // maximum between the initial profit and the current price minus the price you bought the stock for.
+    for (let i = 0; i < prices.length; i++) {
+        if (prices[i] < buyPrice) {
+            buyPrice = prices[i]
+        } else {
+            profit = Math.max(profit, prices[i] - buyPrice);
+        }
+    }
+    return profit;
+};
