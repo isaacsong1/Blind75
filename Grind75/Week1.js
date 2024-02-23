@@ -120,14 +120,14 @@ var isValid = function(s) {
 
 /* EXAMPLES
 1:  
-    Input:
-    Output: 
+    Input: list1 = [1, 2, 4], list2 = [1, 3, 4]
+    Output: [1, 1, 2, 3, 4, 4]
 2:
-    Input:
-    Output: 
+    Input: list1 = [], list2 = []
+    Output: []
 3:
-    Input:
-    Output: 
+    Input: list1 = [], list2 = [0]
+    Output: [0]
 */
 
 /* CONSTRAINTS
