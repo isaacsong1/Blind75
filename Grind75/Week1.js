@@ -281,7 +281,20 @@ var maxProfit = function(prices) {
     Given a string s, return true if it is a palindrome or false otherwise.
 */  
 
-
+/* EXAMPLES
+1:  
+    Input: s = 'A man, a plan, a canal: Panama'
+    Output: true
+    Explanation: 'amanaplanacanalpanama' 
+2:
+    Input: s = 'race a car'
+    Output: false
+    Explanation: 'raceacar' is not a palindrome
+3:
+    Input: s = ' '
+    Output: true
+    Explanation: s is an empty string '' after eremoving non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome.
+*/
 
 /* CONSTRAINTS
     
