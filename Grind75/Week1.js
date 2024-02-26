@@ -264,3 +264,20 @@ var maxProfit = function(prices) {
     }
     return profit;
 };
+
+//? 125. Valid Palindrome (https://leetcode.com/problems/valid-palindrome/description/)
+//! Practice Whiteboard Coding
+// R - Repeat the problem
+// E - Write out examples
+// A - Describe your approaches
+// C - Write your code
+// T - Test
+// O - Optimization
+
+
+/* CONSTRAINTS
+    
+*/
+
+/* IDEA
+*/
