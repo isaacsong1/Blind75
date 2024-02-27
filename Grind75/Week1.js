@@ -302,4 +302,8 @@ var maxProfit = function(prices) {
 */
 
 /* IDEA
+    This will be easier to solve in Python.
+    First, I want to change all letters to lowercase. Then, iterate through the string and add letter to a variable while skipping non-alphanumeric values. Then, we compare the string
+    saved to string[::-1]
 */
+
