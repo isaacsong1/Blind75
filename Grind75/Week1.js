@@ -324,18 +324,10 @@ var maxProfit = function(prices) {
 //? 226. Invert Binary Tree (https://leetcode.com/problems/invert-binary-tree/description/)
 
 /* DIRECTIONS
-    
+    Given the root of a binary tree, invert the tree, and return its root.
 */  
 
 /* EXAMPLES
-1:  
-    Input: 
-    Output: 
-    Explanation: 
-2:
-    Input: 
-    Output: 
-    Explanation: 
 
 */
 
