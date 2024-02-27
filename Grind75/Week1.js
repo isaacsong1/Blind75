@@ -264,3 +264,59 @@ var maxProfit = function(prices) {
     }
     return profit;
 };
+
+//? 125. Valid Palindrome (https://leetcode.com/problems/valid-palindrome/description/)
+//! Practice Whiteboard Coding
+// R - Repeat the problem
+// E - Write out examples
+// A - Describe your approaches
+// C - Write your code
+// T - Test
+// O - Optimization
+
+/* DIRECTIONS
+    A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward.
+    Alphanumeric characters include letters and numbers.
+
+    Given a string s, return true if it is a palindrome or false otherwise.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: s = 'A man, a plan, a canal: Panama'
+    Output: true
+    Explanation: 'amanaplanacanalpanama' 
+2:
+    Input: s = 'race a car'
+    Output: false
+    Explanation: 'raceacar' is not a palindrome
+3:
+    Input: s = ' '
+    Output: true
+    Explanation: s is an empty string '' after eremoving non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome.
+*/
+
+/* CONSTRAINTS
+    1 <= s.length <= 2 * 10^5
+    s consists only of printable ASCII characters
+*/
+
+/* IDEA
+    This will be easier to solve in Python.
+    First, I want to change all letters to lowercase. Then, iterate through the string and add letter to a variable while skipping non-alphanumeric values. Then, we compare the string
+    saved to string[::-1]
+    New idea: Use list comprehension and .isalnum() to create an array of characters that are alphanumeric. Then check if the reverse of the array is the same as the array and return 
+    True if so.
+*/
+
+// class Solution(object):
+//     def isPalindrome(self, s):
+//         """
+//         :type s: str
+//         :rtype: bool
+//         """
+//         str_lower = [char.lower() for char in s if char.isalnum()]
+//         if str_lower == str_lower[::-1]:
+//             return True
+//         return False
+        
