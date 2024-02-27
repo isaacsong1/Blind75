@@ -351,6 +351,8 @@ var maxProfit = function(prices) {
     child to reverse it.
 */
 
+// Time: O(n)
+// Space: O(n) where n is the number of recursive calls
 // class Solution(object):
 //     def invertTree(self, root):
 //         """
