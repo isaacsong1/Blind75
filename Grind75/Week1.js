@@ -305,5 +305,18 @@ var maxProfit = function(prices) {
     This will be easier to solve in Python.
     First, I want to change all letters to lowercase. Then, iterate through the string and add letter to a variable while skipping non-alphanumeric values. Then, we compare the string
     saved to string[::-1]
+    New idea: Use list comprehension and .isalnum() to create an array of characters that are alphanumeric. Then check if the reverse of the array is the same as the array and return 
+    True if so.
 */
 
+// class Solution(object):
+//     def isPalindrome(self, s):
+//         """
+//         :type s: str
+//         :rtype: bool
+//         """
+//         str_lower = [char.lower() for char in s if char.isalnum()]
+//         if str_lower == str_lower[::-1]:
+//             return True
+//         return False
+        
