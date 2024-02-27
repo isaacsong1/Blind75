@@ -320,3 +320,53 @@ var maxProfit = function(prices) {
 //             return True
 //         return False
         
+
+//? 226. Invert Binary Tree (https://leetcode.com/problems/invert-binary-tree/description/)
+// TODO: DONE IN PYTHON
+
+/* DIRECTIONS
+    Given the root of a binary tree, invert the tree, and return its root.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: root = 4, 2, 7, 1, 3, 6, 9]
+    Output: [4, 7, 2, 9, 6, 3, 1]
+2:
+    Input: root = [2, 1, 3]
+    Output: [2, 3, 1]
+3:
+    Input: root = []
+    Output: []
+*/
+
+/* CONSTRAINTS
+    The number of nodes in the tree is in the range [0, 100]
+    -100 <= Node.val <= 100
+*/
+
+/* IDEA
+    Going to use a recursive approach using Depth First Search.
+    First we check if our root has values and return None if there is nothing. With our root, we want to swap[ the left and right, then recursively call our function passing the node's
+    child to reverse it.
+*/
+
+// Time: O(n)
+// Space: O(n) where n is the number of recursive calls
+// class Solution(object):
+//     def invertTree(self, root):
+//         """
+//         :type root: TreeNode
+//         :rtype: TreeNode
+//         """
+//         if not root:
+//             return None
+        
+//         temp = root.left
+//         root.left = root.right
+//         root.right = temp
+
+//         self.invertTree(root.left)
+//         self.invertTree(root.right)
+
+//         return root
