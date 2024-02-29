@@ -370,3 +370,27 @@ var maxProfit = function(prices) {
 //         self.invertTree(root.right)
 
 //         return root
+
+//? 242. Valid Anagram (https://leetcode.com/problems/valid-anagram/description/)
+
+/* DIRECTIONS
+    
+*/  
+
+/* EXAMPLES
+1:  
+    Input: 
+    Output: 
+2:
+    Input: 
+    Output: 
+
+*/
+
+/* CONSTRAINTS
+    
+*/
+
+/* IDEA
+    
+*/
