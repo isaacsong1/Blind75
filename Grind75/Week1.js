@@ -381,12 +381,11 @@ var maxProfit = function(prices) {
 
 /* EXAMPLES
 1:  
-    Input: 
-    Output: 
+    Input: s = 'anagram', t = 'nagaram'
+    Output: true
 2:
-    Input: 
-    Output: 
-
+    Input: s = 'rat', t = 'car'
+    Output: false
 */
 
 /* CONSTRAINTS
