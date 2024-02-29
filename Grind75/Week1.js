@@ -394,5 +394,6 @@ var maxProfit = function(prices) {
 */
 
 /* IDEA
-    
+    I could create a hash map with the letter as the key and the amount of times the letter appears as the value. Once we do that, we compare the count from t to s and if they are equal
+    return true.
 */
