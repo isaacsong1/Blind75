@@ -370,3 +370,43 @@ var maxProfit = function(prices) {
 //         self.invertTree(root.right)
 
 //         return root
+
+//? 242. Valid Anagram (https://leetcode.com/problems/valid-anagram/description/)
+
+/* DIRECTIONS
+    Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+    An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: s = 'anagram', t = 'nagaram'
+    Output: true
+2:
+    Input: s = 'rat', t = 'car'
+    Output: false
+*/
+
+/* CONSTRAINTS
+    1 <= s.length, t.length <= 5 * 10^4
+    s and t consist of lowercase English letters
+*/
+
+/* IDEA
+    I could create a hash map with the letter as the key and the amount of times the letter appears as the value. Once we do that, we compare the count from t to s and if they are equal
+    return true.
+
+    Different easier idea: Split the strings, sort the array, and join all the characters into a string and compare each new string.
+*/
+
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+var isAnagram = function(s, t) {
+    sorted_s = s.split('').sort().join();
+    sorted_t = t.split('').sort().join();
+    return sorted_s === sorted_t;
+};
