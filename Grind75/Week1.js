@@ -410,3 +410,26 @@ var isAnagram = function(s, t) {
     sorted_t = t.split('').sort().join();
     return sorted_s === sorted_t;
 };
+
+//? 704. Binary Search (https://leetcode.com/problems/binary-search/description/)
+
+/* DIRECTIONS
+    
+*/  
+
+/* EXAMPLES
+1:  
+    Input: 
+    Output: 
+2:
+    Input:
+    Output: 
+*/
+
+/* CONSTRAINTS
+    
+*/
+
+/* IDEA
+    
+*/
