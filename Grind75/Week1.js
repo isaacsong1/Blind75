@@ -457,19 +457,27 @@ var isAnagram = function(s, t) {
  * @return {number}
  */
 var search = function(nums, target) {
+    // Initialize two pointers, one for the left of the array and one for the right
     let left = 0;
     let right = nums.length - 1;
 
+    // Iterate while left pointer is less than or equal to the right...
     while (left <= right) {
+        // Calculate index at the middle
         const mid = Math.floor((left + right) / 2);
+        // Checks if the middle of the array is equal to the target
         if (nums[mid] === target) {
             return mid;
         }
+        // If the midpoint value is greater than the target, update the right pointer to only use the first half of the nums array
         if (nums[mid] > target) {
             right = mid - 1;
-        } else {
+        } 
+        // Else, update the left pointer to check the values of the second half of the nums array
+        else {
             left = mid + 1;
         }
     }
+    // When iteration finishes, return -1 if the target was not found.
     return -1;
 };
