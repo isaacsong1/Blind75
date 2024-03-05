@@ -524,6 +524,9 @@ var search = function(nums, target) {
     NOTE: I followed a youtube video since solutions were a bit confusing (https://www.youtube.com/watch?v=OODFEqJxiDo)
 */
 
+
+// Time: O(m x n)
+// Space: O(m x n)
 /**
  * @param {number[][]} image
  * @param {number} sr
