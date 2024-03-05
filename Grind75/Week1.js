@@ -449,6 +449,8 @@ var isAnagram = function(s, t) {
 */
 
 // ITERATEIVE SOLUTION
+// Time: O(logn) (n is how many iterations it takes to reawch the desired target)
+// Space: O(1) (Uses constant amount of space of two pointers and one mid index variable
 /**
  * @param {number[]} nums
  * @param {number} target
