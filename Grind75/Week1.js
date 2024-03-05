@@ -439,5 +439,11 @@ var isAnagram = function(s, t) {
 */
 
 /* IDEA
-    
+    The idea of binary search is to iterate until the desired target is reached. Each iteration involves 'splitting' the array length in half and checking if the target is above or below
+    the value at the midpoint.
+    If the value of the array at the midpoint is equal to our target, return the index.
+    If the value of the array at the midpoint is greater than our target, set our iteration condition equal to the midpoint index.
+    Else, set the length of the array equal to the midpoint to start searching the right half of the array.
+
+    Outside the loop, return -1.
 */
