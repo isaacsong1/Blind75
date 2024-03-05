@@ -508,7 +508,12 @@ var search = function(nums, target) {
 */
 
 /* CONSTRAINTS
-    
+    m == image.length
+    n == image[i].length
+    1 <= m, n <= 50
+    0 <= image[i][j], color < 2^16
+    0 <= sr < m
+    0 <= sc < n
 */
 
 /* IDEA
