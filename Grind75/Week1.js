@@ -481,3 +481,86 @@ var search = function(nums, target) {
     // When iteration finishes, return -1 if the target was not found.
     return -1;
 };
+
+//? 733. Flood Fill (https://leetcode.com/problems/flood-fill/description/)
+
+/* DIRECTIONS
+    An image is represented by an m x n integer grid image where image[i][j] represents the pixel value of the image.
+
+    You are also given three integers sr, sc, and color. You should perform a flood fill on the image starting from the pixel image[sr][sc].
+
+    To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels
+    connected 4-directionally to those pixels (also with the same color), and so on. Replace the color of all the aforementioned pixels with color.
+
+    Return the modified image after performing the flood fill.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: image = [[1, 1, 1], [1, 1, 0], [1, 0, 1]], sr = 1, sc = 1, color = 2
+    Output: [[2, 2, 2], [2, 2, 0], [2, 0, 1]]
+    Explanation: From the center of the image with position (sr, sc) = (1, 1), all pixels connected by a path of the same color as the starting pixel are colored with the new color.
+        Note that the bottom corner is not colored 2, because it is not 4-directionally connected to the starting pixel.
+2:
+    Input: image = [[0, 0, 0], [0, 0, 0]], sr = 0, sc = 0, color = 0
+    Output: [[0, 0, 0], [0, 0, 0]]
+    Explanation: The starting pixel is already colored 0, so no changes are made to the image.
+*/
+
+/* CONSTRAINTS
+    m == image.length
+    n == image[i].length
+    1 <= m, n <= 50
+    0 <= image[i][j], color < 2^16
+    0 <= sr < m
+    0 <= sc < n
+*/
+
+/* IDEA
+    Immediately looking at this, I thought of using a recursive solution. From the starting coordinate, we will check each value 4-directionally (up, right, down, left) and update
+    the values accordingly. If our initial point is equal to the target, return the original image. Else, update the starting value with the target and begin checking positions
+    4-directionally until neighboring numbers equal to the starting value are updated.
+
+    NOTE: I followed a youtube video since solutions were a bit confusing (https://www.youtube.com/watch?v=OODFEqJxiDo)
+*/
+
+
+// Time: O(m x n)
+// Space: O(m x n)
+/**
+ * @param {number[][]} image
+ * @param {number} sr
+ * @param {number} sc
+ * @param {number} color
+ * @return {number[][]}
+ */
+var floodFill = function(image, sr, sc, color) {
+    const startingPoint = image[sr][sc];
+
+    function recurse(image, sr, sc) {
+        // Check boundaries
+        // sr < 0 || sr > image.length - 1 checks that sr (starting row) is within the bounds
+        // sc < 0 || sc > image[0].length - 1 checks that sc (starting column) is within the bounds
+        // image[sr][sc] !== startingPoint checks if the value is equal to our starting value
+        // image[sr][sc] === color checks if our starting point is the color
+        if (sr < 0 || sr > image.length - 1 || sc < 0 || sc > image[0].length - 1 || image[sr][sc] !== startingPoint || 
+        image[sr][sc] === color) return image;
+
+        // Update position to color
+        image[sr][sc] = color;
+        
+        // Check down one row
+        recurse(image, sr + 1, sc);
+        // Check up one row
+        recurse(image, sr - 1, sc);
+        // Check right one column
+        recurse(image, sr, sc + 1);
+        // Check left one column
+        recurse(image, sr, sc - 1);
+
+        return image;
+    }
+
+    // Begin recursion
+    return recurse(image, sr, sc);
+};
