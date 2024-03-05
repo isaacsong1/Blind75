@@ -410,3 +410,74 @@ var isAnagram = function(s, t) {
     sorted_t = t.split('').sort().join();
     return sorted_s === sorted_t;
 };
+
+//? 704. Binary Search (https://leetcode.com/problems/binary-search/description/)
+
+/* DIRECTIONS
+    Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index.
+    Otherwise, return -1.
+
+    You must write an algorithm with O(logn) runtime complexity.
+*/  
+
+/* EXAMPLES
+1:  
+    Input: nums = [-1, 0, 3, 5, 9, 12], target = 9
+    Output: 4
+    Explanation: 9 exists in nums and its index is 4
+2:
+    Input: nums = [-1, 0, 3, 5, 9, 12], target = 2
+    Output: -1
+    Explanation: 2 does not exist in nums so return -1
+*/
+
+/* CONSTRAINTS
+    1 <= nums.length <= 10^4
+    -10^4 < nums[i], target < 10^4
+    All the integers in nums are unique
+    nums is sorted in ascending order
+*/
+
+/* IDEA
+    The idea of binary search is to iterate until the desired target is reached. Each iteration involves 'splitting' the array length in half and checking if the target is above or below
+    the value at the midpoint.
+    If the value of the array at the midpoint is equal to our target, return the index.
+    If the value of the array at the midpoint is greater than our target, set our iteration condition equal to the midpoint index.
+    Else, set the length of the array equal to the midpoint to start searching the right half of the array.
+
+    Outside the loop, return -1.
+*/
+
+// ITERATEIVE SOLUTION
+// Time: O(logn) (n is how many iterations it takes to reawch the desired target)
+// Space: O(1) (Uses constant amount of space of two pointers and one mid index variable
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var search = function(nums, target) {
+    // Initialize two pointers, one for the left of the array and one for the right
+    let left = 0;
+    let right = nums.length - 1;
+
+    // Iterate while left pointer is less than or equal to the right...
+    while (left <= right) {
+        // Calculate index at the middle
+        const mid = Math.floor((left + right) / 2);
+        // Checks if the middle of the array is equal to the target
+        if (nums[mid] === target) {
+            return mid;
+        }
+        // If the midpoint value is greater than the target, update the right pointer to only use the first half of the nums array
+        if (nums[mid] > target) {
+            right = mid - 1;
+        } 
+        // Else, update the left pointer to check the values of the second half of the nums array
+        else {
+            left = mid + 1;
+        }
+    }
+    // When iteration finishes, return -1 if the target was not found.
+    return -1;
+};
