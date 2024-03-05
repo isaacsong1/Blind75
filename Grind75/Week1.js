@@ -517,5 +517,7 @@ var search = function(nums, target) {
 */
 
 /* IDEA
-    
+    Immediately looking at this, I thought of using a recursive solution. From the starting coordinate, we will check each value 4-directionally (up, right, down, left) and update
+    the values accordingly. If our initial point is equal to the target, return the original image. Else, update the starting value with the target and begin checking positions
+    4-directionally until neighboring numbers equal to the starting value are updated.
 */
