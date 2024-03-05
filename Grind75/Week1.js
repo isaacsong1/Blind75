@@ -539,18 +539,28 @@ var floodFill = function(image, sr, sc, color) {
 
     function recurse(image, sr, sc) {
         // Check boundaries
+        // sr < 0 || sr > image.length - 1 checks that sr (starting row) is within the bounds
+        // sc < 0 || sc > image[0].length - 1 checks that sc (starting column) is within the bounds
+        // image[sr][sc] !== startingPoint checks if the value is equal to our starting value
+        // image[sr][sc] === color checks if our starting point is the color
         if (sr < 0 || sr > image.length - 1 || sc < 0 || sc > image[0].length - 1 || image[sr][sc] !== startingPoint || 
         image[sr][sc] === color) return image;
 
+        // Update position to color
         image[sr][sc] = color;
-
+        
+        // Check down one row
         recurse(image, sr + 1, sc);
+        // Check up one row
         recurse(image, sr - 1, sc);
+        // Check right one column
         recurse(image, sr, sc + 1);
+        // Check left one column
         recurse(image, sr, sc - 1);
 
         return image;
     }
 
+    // Begin recursion
     return recurse(image, sr, sc);
 };
