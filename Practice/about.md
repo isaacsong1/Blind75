@@ -1,0 +1,2 @@
+I thought of a new way to practice Leetcode questions since recent questions have been requiring me to look at the solutions before attempting. For topics I have never heard of, I will 
+write down easy version of the questions using my original method and then attempt the Grind75 version of the question.
