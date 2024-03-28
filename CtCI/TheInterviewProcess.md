@@ -32,4 +32,8 @@ Why things are like this :
 - Basis data structure and algoithm knowledge is useful:
     In the chances that trees, graphs, lists, sorting, and other knowledge comes up, it is valuable to know beforehand. It is hard to use a binary search tree if you don't know what it is. If you do know, then you pretty much know the basics.
 
-Whiteboards allow for increased communication.
+Whiteboards let you focus on what matters:
+- The interviewer does not expect perfect code on a whiteboard. Virtually everyone has some bugs or minor syntactical errors
+- Whiteboard allows you to focus on the big picture. You don't need to compile or write the entire class definition and boilerplate code. Instead, the focus is on the 'meaty' parts of the code, the function that the question is really all about
+- Whiteboards help the candidate speak more and explain their thoguht process. Computers cause communication to drop substantially.
+
