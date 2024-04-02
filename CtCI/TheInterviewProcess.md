@@ -44,3 +44,7 @@ Evaluation process:
 - Interviewers assess you relative to other candidates on that same question by the same interviewer
 - Your interviewer develops a feel  for your performance by comparing you to other people. This is relative to ALL the candidates that the interviewer has asked the question to
 - For this reason, getting ah ard question is not a bad thing. When it is harder for you, it is harder for everyone
+
+FAQ:
+I didn't hear back immediately after my interview. Am I being rejected?
+- No, there could he a number of reasons why the decision is delayed. Simply, interviewer has not provided feedback yet. If you don't hear back from a company within 3-5 business days after your interview, check in (politely) with your recruiter
