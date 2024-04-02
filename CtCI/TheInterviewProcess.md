@@ -37,3 +37,6 @@ Whiteboards let you focus on what matters:
 - Whiteboard allows you to focus on the big picture. You don't need to compile or write the entire class definition and boilerplate code. Instead, the focus is on the 'meaty' parts of the code, the function that the question is really all about
 - Whiteboards help the candidate speak more and explain their thought process. Computers cause communication to drop substantially.
 
+How questions are selected:
+- Some companies focus on algoithms (often with some system design worked in) and othewrs really like knowledge-based questions
+
