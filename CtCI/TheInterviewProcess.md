@@ -35,5 +35,5 @@ Why things are like this :
 Whiteboards let you focus on what matters:
 - The interviewer does not expect perfect code on a whiteboard. Virtually everyone has some bugs or minor syntactical errors
 - Whiteboard allows you to focus on the big picture. You don't need to compile or write the entire class definition and boilerplate code. Instead, the focus is on the 'meaty' parts of the code, the function that the question is really all about
-- Whiteboards help the candidate speak more and explain their thoguht process. Computers cause communication to drop substantially.
+- Whiteboards help the candidate speak more and explain their thought process. Computers cause communication to drop substantially.
 
