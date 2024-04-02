@@ -35,5 +35,16 @@ Why things are like this :
 Whiteboards let you focus on what matters:
 - The interviewer does not expect perfect code on a whiteboard. Virtually everyone has some bugs or minor syntactical errors
 - Whiteboard allows you to focus on the big picture. You don't need to compile or write the entire class definition and boilerplate code. Instead, the focus is on the 'meaty' parts of the code, the function that the question is really all about
-- Whiteboards help the candidate speak more and explain their thoguht process. Computers cause communication to drop substantially.
+- Whiteboards help the candidate speak more and explain their thought process. Computers cause communication to drop substantially.
 
+How questions are selected:
+- Some companies focus on algoithms (often with some system design worked in) and othewrs really like knowledge-based questions
+
+Evaluation process:
+- Interviewers assess you relative to other candidates on that same question by the same interviewer
+- Your interviewer develops a feel  for your performance by comparing you to other people. This is relative to ALL the candidates that the interviewer has asked the question to
+- For this reason, getting ah ard question is not a bad thing. When it is harder for you, it is harder for everyone
+
+FAQ:
+I didn't hear back immediately after my interview. Am I being rejected?
+- No, there could he a number of reasons why the decision is delayed. Simply, interviewer has not provided feedback yet. If you don't hear back from a company within 3-5 business days after your interview, check in (politely) with your recruiter
