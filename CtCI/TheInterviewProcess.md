@@ -40,3 +40,7 @@ Whiteboards let you focus on what matters:
 How questions are selected:
 - Some companies focus on algoithms (often with some system design worked in) and othewrs really like knowledge-based questions
 
+Evaluation process:
+- Interviewers assess you relative to other candidates on that same question by the same interviewer
+- Your interviewer develops a feel  for your performance by comparing you to other people. This is relative to ALL the candidates that the interviewer has asked the question to
+- For this reason, getting ah ard question is not a bad thing. When it is harder for you, it is harder for everyone
