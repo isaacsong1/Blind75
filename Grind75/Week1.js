@@ -597,5 +597,32 @@ var floodFill = function(image, sr, sc, color) {
 */
 
 /* IDEA
-    
+    For binary search trees, they are ordered so that everything on the left of the root is less than the root and everything on the right of the root is greater than the root.
+
+    Initialize a variable that keeps track of which parent we are checking. Then, if both p and q are less than the node, then update the parent to the next highest root. If greater, 
+    update parent to the next highest. If p is less than the root, and q is greater than the root, return the parent.
 */
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+
+/**
+ * @param {TreeNode} root
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {TreeNode}
+ */
+var lowestCommonAncestor = function(root, p, q) {
+    if (p.val < root.val && q.val < root.val) {
+        return lowestCommonAncestor(root.left, p, q);
+    } else if (p.val > root.val && q.val > root.val) {
+        return lowestCommonAncestor(root.right, p, q);
+    } else {
+        return root
+    }
+};
